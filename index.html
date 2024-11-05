@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="display">
+            <input type="text" class="input"  id="input1" name="input1">
+        </div>
+        <div class="but">
+            <input type="button" class="button" value="AC" onclick="clear1()">
+            <input type="button" class="button" value="DEL" onclick="del()">
+            <input type="button" class="button" value="." onclick="document.getElementById('input1').value += '.'">
+            <input type="button" class="button" value="/" onclick="document.getElementById('input1').value += '/'">
+        </div>
+        <div class="but"> 
+            <input type="button" class="button" value="7" onclick="document.getElementById('input1').value += '7'">
+            <input type="button" class="button" value="8" onclick="document.getElementById('input1').value += '8'">
+            <input type="button" class="button" value="9" onclick="document.getElementById('input1').value += '9'">
+            <input type="button" class="button" value="*" onclick="document.getElementById('input1').value += '*'">
+        </div>
+        <div class="but">
+            <input type="button" class="button" value="4" onclick="document.getElementById('input1').value += '4'">
+            <input type="button" class="button" value="5" onclick="document.getElementById('input1').value += '5'">
+            <input type="button" class="button" value="6" onclick="document.getElementById('input1').value += '6'">
+            <input type="button" class="button" value="-" onclick="document.getElementById('input1').value += '-'">
+        </div> 
+        <div class="but"> 
+            <input type="button" class="button" value="1" onclick="document.getElementById('input1').value += '1'">
+            <input type="button" class="button" value="2" onclick="document.getElementById('input1').value += '2'">
+            <input type="button" class="button" value="3" onclick="document.getElementById('input1').value += '3'">
+            <input type="button" class="button" value="+" onclick="document.getElementById('input1').value += '+'">
+        </div>
+        <div class="but"> 
+            <input type="button" class="button" value="00" onclick="document.getElementById('input1').value += '00'">
+            <input type="button" class="button" value="0" onclick="document.getElementById('input1').value += '0'">
+            <input type="button" class="equals" value="=" onclick="result()">
+        </div>
+    </section>
+
+    <script src="./calculator.js">
+
+    </script>
+</body>
+</html>
